@@ -1,0 +1,907 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+  overflow-x: hidden;
+}
+.homescreen{
+  width: 100%;
+  height: 930px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+}
+/* Carousel PC */
+.carousel {
+  position: relative;
+  width: 100%; 
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.carouselimg{
+  width: 100%;
+  object-fit: cover;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel button {
+  padding: 10px 20px;
+}
+
+a.prev{
+  left: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #ffff;
+  text-decoration: none;
+  
+}
+a.next{
+  right: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #ffff;
+  text-decoration: none;
+}
+.content h1{
+  color: white;
+  margin: 0%;
+  font-size: 50px;
+  
+}
+.content h2{
+  color: white;
+  margin: 0%;
+  font-size: 40px;
+}
+.content p{
+  color: white;
+  margin: 3%;
+  font-size: 20px;
+  text-align: center;
+}
+.button1{
+  width: 130px;
+  background: azure;
+  border-radius: 50px;
+  border: none;
+  position: none;
+  
+}
+
+
+/* Carousel PC end */
+
+
+/* Carousel mobile */
+@media(max-width: 500px){
+  .carousel{
+    width: 100%;
+    height: 1000px;
+  }
+  .carouselimg{
+    width: 100%;
+
+  }
+  .content{
+    width: 70%;
+  }
+}
+/* Carousel mobile end */
+
+
+
+/* Carousel lowend tab */
+@media(max-width: 864px) {
+  .carousel {
+      width: 100%;
+      height: 1000px;
+    }
+  
+    .carouselimg{
+      width: 100%;
+      height: 1000px;
+    }
+  
+    .content {
+      width: 70%;
+    }
+  }
+
+
+/* Carousel lowend tab end */
+
+
+
+/* Carousel highend tab */
+@media(max-width: 1233px) {
+  .carousel {
+    width: 100%;
+    height: 1000px;
+  }
+
+  .carouselimg{
+    width: 100%;
+    height: 1000px;
+  }
+
+  .content {
+    width: 70%;
+  }
+
+}
+/* Carousel highend tab end */
+
+
+
+/* navigation bar*/
+
+nav {
+  width: 100%;
+  height: 60px;
+  background: none;
+  transition: background-color 0.5s ease;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+}
+
+nav.scrolled {
+  background: #041d17;
+}
+
+ul {
+  padding-right: 25px;
+}
+
+ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: right;
+  font-weight: 400;
+  color: white;
+}
+
+ul li::after {
+  content: '';
+  background-color: white;
+  width: 0%;
+  height: 2px;
+  display: block;
+  margin: auto;
+  transition: .5s ease-in-out;
+}
+
+ul li:hover::after {
+  width: 100%;
+}
+
+.navlogo {
+  width: 50px;
+  padding: 25px;
+  margin-top: 7px;
+}
+
+.close {
+  width: 15px;
+}
+
+.open {
+  width: 20px;
+}
+
+.open {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+/* navigation bar mobile*/
+@media(max-width: 500px){
+  body{
+    overflow-x: hidden;
+  }
+  .navLinks ul li {
+      display: block;
+    }
+    .navLinks {
+      position: absolute;
+      background: rgba(0, 0, 0, .8);
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -220px;
+      text-align: left;
+      z-index: 3;
+      transition: 1s;
+    }
+  
+    .close {
+      display: block;
+      margin: 15px;
+      cursor: pointer;
+    }
+  
+    .open {
+      display: block;
+      margin: 7.5%;
+      cursor: pointer;
+    }
+  
+    .navlogo {
+      width: 150px;
+    }
+  
+    .navLinks ul {
+      padding: 15px;
+  
+    }
+      
+}
+
+/* nav bar lowend tab end */
+@media(max-width: 864px) {
+  .navLinks ul li {
+      display: block;
+    }
+  
+    .navLinks {
+      position: absolute;
+      background: rgba(0, 0, 0, .8);
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -220px;
+      text-align: left;
+      z-index: 3;
+      transition: 1s;
+    }
+  
+    .close {
+      display: block;
+      margin: 15px;
+      cursor: pointer;
+    }
+  
+    .open {
+      display: block;
+      margin: 7.5%;
+      cursor: pointer;
+    }
+  
+    .navlogo {
+      width: 150px;
+    }
+  
+    .navLinks ul {
+      padding: 15px;
+  
+    }
+}
+/* navbar lowend tab end */
+
+/* navbar highend tab */
+@media(max-width: 1266px) {
+  .navLinks ul li {
+      display: block;
+    }
+  
+    .navLinks {
+      position: absolute;
+      background: rgba(0, 0, 0, .8);
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -220px;
+      text-align: left;
+      z-index: 3;
+      transition: 1s;
+    }
+  
+    .close {
+      display: block;
+      margin: 15px;
+      cursor: pointer;
+    }
+  
+    .open {
+      display: block;
+      margin: 7.5%;
+      cursor: pointer;
+    }
+  
+    .navlogo {
+      width: 50px;
+    }
+  
+    .navLinks ul {
+      padding: 15px;
+  
+    }
+}
+
+/* about section pc */
+.aboutus{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.sectionnname{
+  color: #85226c;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 1%;
+}
+.aboutholder{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutphotoholder{
+  width: 50%;
+}
+.aboutholder img{
+  width: 100%;
+  object-fit: cover;
+}
+.aboutcontentholder{
+  width: 50%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  
+}
+.aboutcontentholder1{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 90%;
+}
+.aboutcontentholder1 h3{
+  text-align: center;
+  font-size: 30px;
+}
+.aboutcontentholder1 p{
+  text-align: center;
+  margin: 2%;
+  text-align: justify;
+}
+.button2 {
+  width: 130px;
+  height: 40px;
+  background: #85226c;
+  border-radius: 50px;
+  border: none;
+  position: none;
+  color: white;
+  margin: 2%;
+  cursor: pointer;
+}
+
+/* about section end pc*/
+
+/* about section mobile */
+@media(max-width: 500px){
+  .aboutholder{
+    display: grid;
+    justify-items: center;
+  }
+  .aboutphotoholder{
+    width: 90%;
+  }
+  .aboutcontentholder{
+    width: 90%;
+  }
+}
+/* about section mobile end*/
+
+/* about section lowend tab */
+@media(max-width: 864px) {
+  .aboutholder {
+    display: grid;
+    justify-items: center;
+  }
+
+  .aboutphotoholder {
+    width: 90%;
+  }
+
+  .aboutcontentholder {
+    width: 90%;
+  }
+}
+
+/* about section lowend tab end*/
+
+/* about section highend tab */
+@media(max-width: 1233px) {
+  .aboutholder {
+    display: grid;
+    justify-items: center;
+  }
+
+  .aboutphotoholder {
+    width: 90%;
+  }
+
+  .aboutcontentholder {
+    width: 90%;
+  }
+}
+/* about section highend tab end*/
+.services{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.servicecardholder{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  background: url('/images/Interior-painting.jpg');
+  
+}
+.servicecard{
+  width: 25% ;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 3%;
+  background: white;
+}
+.servicecard:nth-child(2) {
+  transition-delay: 600ms;
+}
+
+.servicecard:nth-child(3) {
+  transition-delay: 800ms;
+}
+
+.servicecard:nth-child(4) {
+  transition-delay: 1000ms;
+}
+.servicecard img{
+  width: 100%;
+}
+.servicecradcontentholder{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 3%;
+}
+.servicecradcontentholder h3{
+  text-align: center;
+  font-size: 25px;
+}
+.servicecradcontentholder p{
+  text-align: justify;
+  margin: 2%;
+}
+/* service section pc */
+
+/* service section mobile */
+@media(max-width: 500px) {
+  .servicecardholder{
+    display: flex;
+    flex-direction: column;
+  }
+  .servicecard{
+    width: 90%;
+  }
+}
+/* service section mobile end */
+
+/* service section lowend tab  */
+@media(max-width: 1233px) {
+  .servicecardholder {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .servicecard {
+    width: 90%;
+  }
+}
+
+/* service section lowend tab end */
+
+/* service section lowend tab  */
+@media(max-width: 864px) {
+  .servicecardholder {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .servicecard {
+    width: 90%;
+  }
+}
+
+/* service section lowend tab end */
+
+/* our project pc */
+.ourproject{
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.projectphotosholder{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.galleryimages{
+  width: 20%;
+  margin: 1%;
+}
+
+/* our project pc end */
+/* our project mobile  */
+@media(max-width: 500px) {
+  .projectphotosholder{
+    width: 90%;
+    
+  }
+  .galleryimages {
+    width: 100%;
+    margin: 1%;
+  }
+
+
+ 
+}
+
+/* our project mobile end */
+
+/* our project lowend tab   */
+@media(max-width: 864px) {
+  .projectphotosholder {
+    width: 90%;
+
+  }
+
+  .galleryimages {
+    width: 100%;
+    margin: 1%;
+  }
+
+
+  
+}
+
+/* our project lowend tab end */
+
+/* our project highend tab   */
+@media(max-width: 864px) {
+  .projectphotosholder {
+    width: 90%;
+
+  }
+
+  .galleryimages {
+    width: 100%;
+    margin: 1%;
+  }
+
+
+}
+
+/* our project highend tab end */
+
+/* testimonials pc */
+
+.testimonialcarousel {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background: url('/images/pantone-colors-07.jpg');
+}
+
+.testimonial-slide {
+  display: none;
+  
+}
+
+.testimonial-slide.active1 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 60%;
+  height: 400px;
+  background: rgba(0,0,0,.75);
+}
+
+
+.testimonial-prev{
+  left: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+
+}
+.content1{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.testimonial-next {
+  right: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  
+}
+.testimonial-name{
+  text-align: center;
+  color: #ffffff;
+  margin: 2%;
+}
+.testimonial-company{
+ text-align: center;
+ color: #ffffff;
+}
+.testimonial-content{
+  color: white;
+  text-align: center;
+  margin: 2%;
+}
+.testimonial-person-icon{
+  width: 100px;
+  margin: 2%;
+}
+
+/* testimonail mobile */
+@media(max-width: 500px) {
+  .testimonialcarousel {
+    width: 100%;
+    height: 1000px;
+  }
+
+  .carousel img {
+    width: 100%;
+    
+  }
+
+  .content1 {
+    width: 70%;
+  }
+  .testimonial-slide.active1{
+    width: 80%;
+  }
+}
+
+/*  testimonail mobile end */
+
+/* testimonail lowend tab */
+
+@media(max-width: 864px) {
+  .testimonialcarousel {
+    width: 100%;
+    height: 600px;
+  }
+
+  .content1 {
+    width: 70%;
+  }
+}
+
+/* testimonail lowend tab end */
+
+
+
+/* testimonail highend tab */
+
+@media(max-width: 1233px) {
+  .testimonialcarousel {
+    width: 100%;
+    height: 600px;
+  }
+
+  .content1 {
+    width: 70%;
+  }
+}
+
+/* testimonail highend tab end */
+
+/* footer pc */
+footer{
+  width: 100%;
+  background: black;
+  display: flex;
+  align-items: center;
+  
+  height: 100%;
+  justify-content: center;
+}
+.footercontentholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.linksholder {
+  display: grid;
+  align-items: center;
+  justify-items: left;
+  margin: 25px;
+  width: 300px;
+}
+
+h4.links {
+  text-align: left;
+  font-weight: 600;
+  font-size: 40px;
+  color: #00F4BA;
+}
+
+.linksholder ul {
+  padding: 5px;
+}
+
+.linksholder ul li {
+  display: block;
+}
+
+.logoandiconsholder {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: 25px;
+}
+
+.contact {
+  display: grid;
+  align-items: right;
+  justify-items: right;
+  margin: 30px 0px 30px 30px;
+  width: 350px;
+}
+
+.logoholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerlogo {
+  width: 150px;
+}
+
+.contact1 a {
+  text-decoration: none;
+  color: white;
+  text-align: right;
+
+}
+
+h3 a {
+  text-decoration: none;
+  color: white;
+}
+
+.iconholder ul a img {
+  width: 31px;
+}
+
+.iconholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.iconholder {
+  padding: none;
+}
+
+ul.ul {
+  padding: 0;
+  display: flex;
+}
+
+img.callicon {
+  width: 30px;
+}
+
+.con {
+  display: flex;
+  align-items: center;
+  padding: 15px 0px 10px 20px;
+  cursor: pointer;
+}
+
+.con a {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+/* footer pc end */
+
+
+/* footer lowend tab */
+@media(max-width: 864px){
+  .footercontentholder {
+      display: grid;
+    }
+  
+    section.footer {
+      height: auto;
+    }
+  
+    .contact {
+      display: grid;
+      justify-items: left;
+    }
+  
+    .linksholder {
+      display: none;
+    }
+}
+
+/* footer lowend tab end */

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <title>Surya Associates</title>
+    <link rel="stylesheet" href="cs/index.css">
+    <link rel="stylesheet" href="cs/splash.css">
+    <link rel="stylesheet" href="cs/animation.css">
+    
+  </head>
+  <body>
+    
+      <nav>
+        <a href="index.html"><img class="navlogo" src="images/Surya-Associates-Logo-Official.svg" alt="The-One-Solution-Text-Logo-white-color"></a>
+        <div class="navLinks" id="navLinks">
+            <img src="icons/close-menu-icon.svg" alt="closing-icon" class="close" onclick="hideMenu()">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#ourproject">Our Projects</a></li>
+                <li><a href="#testimonails">Testimonials</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+            </ul> 
+        </div>
+        <img src="icons/open-menu-iocn.svg" alt="three-line-menu" class="open" onclick="openMenu()">
+    </nav>
+  <div class="carousel">
+  <!--<div class="slide">
+    <img class="carouselimg" src="images/surya-associates-all-the-services-combined.jpg" alt="Image 1">
+    <div class="content">
+      <h1>Surya Associates</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iste quas unde, ut porro alias omnis quibusdam cumque minima repellendus iusto deleniti quo accusantium voluptatibus, fugiat, totam provident laboriosam praesentium.</p>
+      <a class="link" href=""><button class="button1">Button 1</button></a>
+    </div>
+  </div>-->
+  <div class="slide active">
+    <img class="carouselimg" src="images/interior-background.jpg" alt="Image 2">
+    <div class="content">
+      <h2>Interior Painting</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aut quae incidunt ipsam porro quidem corrupti quis provident, eveniet ipsa doloribus magni quaerat illum accusamus minus, unde deserunt magnam vero.</p>
+      <a class="link" href=""><button class="button1">Button 1</button></a>
+    </div>
+  </div>
+  <div class="slide">
+    <img class="carouselimg" src="images/exterior-background-04.jpg" alt="Image 3">
+    <div class="content">
+      <h2>Exterior Painting</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati natus distinctio veritatis veniam accusamus quisquam aliquid sunt quas dignissimos, voluptatum asperiores repellat cupiditate amet reprehenderit debitis, reiciendis eaque esse harum!</p>
+      <a class="link" href=""><button class="button1">Button 1</button></a>
+    </div>
+  </div>
+  <div class="slide">
+    <img class="carouselimg" src="images/Waterproofing-background-02.jpg" alt="Image 3">
+    <div class="content">
+      <h2>Water Proofing</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ea molestiae aperiam obcaecati iure non, cumque officia a in cupiditate impedit ipsam. Sint est, veritatis enim fugiat quis quidem! Assumenda?</p>
+      <a class="link" href=""><button class="button1">Button 1</button></a>
+    </div>
+  </div>
+  
+  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+
+<section class="aboutus hidden" id="aboutus">
+  <h2 class="sectionnname">About Us</h2>
+  <div class="aboutholder">
+    <div class="aboutphotoholder">
+      <img src="images/surya-associates-all-the-services-combined.jpg" alt="wall-textured-maroon-color-background-photo">
+    </div>
+    <div class="aboutcontentholder">
+      <div class="aboutcontentholder1">
+        <h3>About Surya Associates</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor laboriosam sint optio, laudantium omnis vel consequatur dolores vero harum consequuntur? Dolor impedit blanditiis saepe doloremque minima, iure exercitationem ducimus?</p>
+        <a class="link" href=""><button class="button2">Button 1</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services hidden" id="services">
+  <h2 class="sectionnname">Services We Offer</h2>
+  <div class="servicecardholder">
+    <div class="servicecard hidden">
+      <img src="images/Interior-painting.jpg" alt="">
+      <div class="servicecradcontentholder">
+        <h3>Interior Painting</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ut expedita deleniti saepe quidem, at similique hic accusantium tempore eum necessitatibus asperiores corporis architecto doloremque veniam ex! Eaque, laboriosam dicta?</p>
+        <a class="link" href="Interiorpaint.html"><button class="button2">Know More</button></a>
+      </div>
+    </div>
+    <div class="servicecard hidden">
+      <img src="images/exterior-painting.jpg" alt="">
+      <div class="servicecradcontentholder">
+        <h3>Exterior Painting</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ut expedita deleniti saepe quidem, at similique hic accusantium tempore eum necessitatibus asperiores corporis architecto doloremque veniam ex! Eaque, laboriosam dicta?</p>
+        <a class="link" href="Exterior.html"><button class="button2">Know More</button></a>
+      </div>
+    </div>
+    <div class="servicecard hidden">
+      <img src="images/waterproofing.jpg" alt="">
+      <div class="servicecradcontentholder">
+        <h3>Waterproofing</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ut expedita deleniti saepe quidem, at similique hic accusantium tempore eum necessitatibus asperiores corporis architecto doloremque veniam ex! Eaque, laboriosam dicta?</p>
+        <a class="link" href="waterproofing.html"><button class="button2">Know More</button></a>
+      </div>
+    </div>
+    <div class="servicecard hidden">
+      <img src="images/painting contracting.jpg" alt="">
+      <div class="servicecradcontentholder">
+        <h3>Contracting Services</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ut expedita deleniti saepe quidem, at similique hic accusantium tempore eum necessitatibus asperiores corporis architecto doloremque veniam ex! Eaque, laboriosam dicta?</p>
+        <a class="link" href="contracting.html"><button class="button2">Know More</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ourproject hidden" id="ourproject">
+  <h2 class="sectionnname">Our Projects</h2>
+  <div class="projectphotosholder">
+    <img class="galleryimages" src="images/Concrete-water-proofing.jpg" alt="">
+    <img class="galleryimages" src="images/Exterior-background-04.jpg" alt="">
+    <img class="galleryimages" src="images/Exterior-background.jpg" alt="">
+    <img class="galleryimages" src="images/exterior-painting.jpg" alt="">
+    <img class="galleryimages" src="images/Interior-painting.jpg" alt="">
+    <img class="galleryimages" src="images/Waterproofing-background-02.jpg" alt="">
+    <img class="galleryimages" src="images/waterproofing.jpg" alt="">
+  </div>
+</section>
+
+<section class="testimonails hidden" id="testimonails">
+  <h2 class="sectionnname">Clients Say</h2>
+  <div class="testimonialcarousel">
+  <div class="testimonial-slide active1">
+    <div class="content1">
+    <img class="testimonial-person-icon" src="icons/person-icon-01.svg" alt="Testimonial 1">
+    <h3 class="testimonial-name">John Doe</h3>
+    <p class="testimonial-company">ABC Company</p>
+    <p class="testimonial-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non feugiat elit. Sed id consectetur ex.</p>
+    </div>
+  </div>
+
+  <div class="testimonial-slide">
+    <div class="content1">
+    <img class="testimonial-person-icon" src="icons/person-icon-01.svg" alt="Testimonial 2">
+    <h3 class="testimonial-name">Jane Smith</h3>
+    <p class="testimonial-company">XYZ Corporation</p>
+    <p class="testimonial-content">Suspendisse nec sem et mauris aliquet condimentum. Ut sed metus consectetur, consequat lacus vel, venenatis metus.</p>
+    </div>
+  </div>
+  <div class="testimonial-slide">
+    <div class="content1">
+    <img class="testimonial-person-icon" src="icons/person-icon-01.svg" alt="Testimonial 3">
+    <h3 class="testimonial-name">Mike Johnson</h3>
+    <p class="testimonial-company">123 Industries</p>
+    <p class="testimonial-content">Fusce scelerisque enim dui, ut ultricies neque facilisis vitae. Nam id ex consequat, volutpat neque ut, accumsan elit.</p>
+    </div>
+  </div>
+  <div class="testimonial-slide">
+    <div class="content1">
+    <img class="testimonial-person-icon" src="icons/person-icon-01.svg" alt="Testimonial 4">
+    <h3 class="testimonial-name">Sarah Thompson</h3>
+    <p class="testimonial-company">Acme Corporation</p>
+    <p class="testimonial-content">Vestibulum at fermentum leo, vitae consectetur arcu. Integer pellentesque tortor in metus feugiat rutrum.</p>
+    </div>
+  </div>
+  <div class="testimonial-navigation">
+    <a class="testimonial-prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="testimonial-next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+</div>
+</section>
+<footer class="footer" id="footer">
+  <div class="footercontentholder">
+            <div class="linksholder">
+                <div class="listholder">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#aboutus">About Us</a></li>
+                        <li><a href="#testimonails">Testimonials</a></li>
+                        <li><a href="#footer">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logoandiconsholder">
+                <div class="logoholder">
+                    <img class="footerlogo" src="images/Surya-Associates-Logo-Official.svg" alt="">
+                </div>
+                <div class="iconholder">
+                    <ul class="ul">
+                        <li><a href="https://www.linkedin.com/company/theonesolution/"><img src="icons/linkedin-icon.svg" alt="linkedin icon"></a></li>
+                        <li><a href="https://www.facebook.com/theonesolution1?mibextid=ZbWKwL"><img src="icons/facebook-icon.svg" alt="facebook icon"></a></li>
+                        <li><a href="https://instagram.com/the.onesolution?igshid=OGQ2MjdiOTE="><img src="icons/instagram-icon.svg" alt="instagram icon"></a></li>
+                        <li><a href="https://youtube.com/@theonesolution3981"><img src="icons/youtube-icon.svg" alt="youtube icon"></a></li>
+                        <li><a href="https://twitter.com/TheOneSolution_?t=Lz1JjKbB8Kk4sZQtRx_H2A&s=09"><img src="icons/twitter-icon.svg" alt="twitter icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="con">
+                    <img class="callicon" src="icons/call-icon.svg" alt="call icon">
+                    <a href="tel:918792926999">: +91 1234567890</a>
+                </div>
+                <div class="con">
+                    <img class="callicon" src="icons/call-icon.svg" alt="call icon">
+                    <a href="tel:918088519842">: +91 1234567890</a>
+                </div>
+                <div class="con">
+                    <img class="callicon" src="icons/whatsapp-icon.svg" alt="whats app icon">
+                    <a href="https://wa.me/918088519842">: +91 1234567890</a>
+                </div>
+                <div class="con">
+                    <img class="callicon" src="icons/gmail-icon.svg" alt="mail icon">
+                    <a href="mailto:hello@theonesolution.co.in">: Suryaassociates.in</a>
+                </div>
+            </div>
+        </div>
+</footer>
+      <script src="js/carousel.js"></script>
+      <script src="js/index.js"></script>
+      <script src="js/testimonailscarousel.js"></script>
+      <script src="js/scrollanimation.js"></script>
+  </body>
+</html>
